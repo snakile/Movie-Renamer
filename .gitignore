@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+
+*.wpu
+
+nosetests.xml
+
+coverage.xml
+*.coverage
+htmlcov
+
