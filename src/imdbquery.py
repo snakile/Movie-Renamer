@@ -1,6 +1,19 @@
 import re
+import terms_to_exclude_before_splitting
+import terms_to_exclude_after_splitting
 
 class ImdbQuery(str):
+    @staticmethod
+    def create_query_from_filename(filename):
+        terms_before = terms_to_exclude_before_splitting.terms
+        terms_after = terms_to_exclude_after_splitting.terms
+        query = ImdbQuery(filename). \
+                exclude_terms(terms_before).lower(). \
+                remove_non_alaphnumeric_chars(). \
+                exclude_terms(terms_after). \
+                add_parentheses_around_years()
+        return query
+    
     def exclude_terms(self, terms_to_exclude):
         r = self
         for term in terms_to_exclude: r = r.replace(term, ' ')
