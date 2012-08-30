@@ -1,29 +1,51 @@
 long_tokens = ['XviD-ARROW',
-               'AC3-LEGi0N',
                'AC3-LUSi',
-               'dxva-TiMPE',
                'AC3-FLAWL3SS',
                'AC3-ViSiON',
-               'XviD-ZMG',
-               'XviD-Noir',
                'RoSubbed-playOFF',
                'D-Z0N3',
                'BDRip',
                'WEB-DL',
-               'WEB.DL'
+               'WEB.DL',
+               'XviD-NYDIC',
+               'x264-VoXHD',
+               'H264-3Li',
+               'XVID-WBZ',
+               'DTS-WiKi',
+               'PS3-TEAM'
                ]
 
-short_tokens = ['DVDRiP',
-          'XviD',
-          'AC3',
-          'LEGi0N',
-          'LUSi',
-          'TiMPE',
-          'dxva',
-          'FLAWL3SS',
-          'ViSiON',
-          'RERiP',
-          'XviD-ZMG'
-          ]
+short_tokens = ['DTS',
+                'Blu-ray',
+                'QEBS',
+                'PS3']
 
-tokens = long_tokens + short_tokens
+famous_uploaders = ['LEGi0N',
+                    'LUSi',
+                    'TiMPE',
+                    'FLAWL3SS',
+                    'ViSiON',
+                    'NYDIC',
+                    'LTRG',
+                    'ZMG',
+                    'D-Z0N3',
+                    'Hive-CM8',
+                    'NPW',
+                    'Feel-Free',
+                    'SHiRK',
+                    'QUiET',
+                    'GokU61',
+                    'MANiAC',
+                    '[Torrent-Force]',
+                    'CROSSBOW',
+                    'REFiNED',
+                    'PRoDJi',
+                    'ViSTA',
+                    'FraMeSToR',
+                    'CtrlHD',
+                    'REPACK-FASM',
+                    'Vrxuniique',
+                    'EuReKA'
+                    ]
+
+tokens = long_tokens + short_tokens + famous_uploaders

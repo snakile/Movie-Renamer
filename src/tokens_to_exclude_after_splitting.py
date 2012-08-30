@@ -4,7 +4,8 @@ classes = ['dvdrip',
            'bdrip',
            'brrip',
            'hq',
-           'dxva'
+           'dxva',
+           'mp4'
            ]
 
 rips = [
@@ -19,7 +20,8 @@ rips = [
         'bd9',
         'dvdr9',
         'telesync',
-        'Telecine'
+        'telecine',
+        'reencoded'
         ]
 
 numbers = ['x264',
