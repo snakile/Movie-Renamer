@@ -12,7 +12,11 @@ long_terms = ('XviD-ARROW',
                'H264-3Li',
                'XVID-WBZ',
                'DTS-WiKi',
-               'PS3-TEAM'
+               'PS3-TEAM',
+               '2CH-aXXo',
+               'iNTERNAL-FFM',
+               '[Extended.Edition]',
+               '[Eng]'
                )
 
 short_terms = ('DTS',
@@ -46,7 +50,9 @@ famous_uploaders = ('LEGi0N',
                     'CtrlHD',
                     'REPACK-FASM',
                     'Vrxuniique',
-                    'EuReKA'
+                    'EuReKA',
+                    'aXXo',
+                    'DiCE'
                     )
 
 terms = long_terms + short_terms + famous_uploaders

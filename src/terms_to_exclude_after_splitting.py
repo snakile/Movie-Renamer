@@ -5,7 +5,9 @@ classes = ('dvdrip',
            'brrip',
            'hq',
            'dxva',
-           'mp4'
+           'mp4',
+           'divx5',
+           'divx'
            )
 
 rips = (
