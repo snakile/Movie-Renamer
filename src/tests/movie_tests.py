@@ -17,6 +17,13 @@ class Test(unittest.TestCase):
         self.assertEqual(str(Movie('Pulp Fiction', 1995)), 'Pulp Fiction (1995)')
         self.assertEqual(str(Movie('Pulp Fiction', '1995')), 'Pulp Fiction (1995)')
     
+    def test_equal(self):
+        the_godfather = Movie('The Godfather', 1972)
+        movie = Movie('Inception', 2010)
+        self.assertNotEqual(the_godfather, movie)
+        movie.title, movie.year = 'The Godfather', 1972
+        self.assertEqual(the_godfather, movie)
+    
     def test_create_movie_from_query_exact_title(self):
         the_prestige = Movie.create_movie_from_query('the prestige')
         self.assertEqual(the_prestige.title, "The Prestige")
