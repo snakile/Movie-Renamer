@@ -13,6 +13,11 @@ class TestImdbQuery(unittest.TestCase):
         filename = ImdbQuery('Inception.2010.DVDRip.x264.dxva-TiMPE')
         query = filename.remove_non_alaphnumeric_chars()
         self.assertEqual(query, 'Inception 2010 DVDRip x264 dxva TiMPE')
+    
+    def test_add_parentheses_around_years(self):
+        filename = ImdbQuery('Inception.2010.DVDRip.x264.dxva-TiMPE')
+        query = filename.remove_non_alaphnumeric_chars().add_parentheses_around_years()
+        self.assertEqual(query, 'Inception (2010) DVDRip x264 dxva TiMPE')
 
 if __name__ == "__main__":
     unittest.main()
