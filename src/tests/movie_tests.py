@@ -15,6 +15,7 @@ class Test(unittest.TestCase):
 
     def test_str(self):
         self.assertEqual(str(Movie('Pulp Fiction', 1995)), 'Pulp Fiction (1995)')
+        self.assertEqual(str(Movie('Pulp Fiction', '1995')), 'Pulp Fiction (1995)')
 
 
 if __name__ == "__main__":
