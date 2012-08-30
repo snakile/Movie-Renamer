@@ -35,6 +35,11 @@ class Test(unittest.TestCase):
     def test_create_movie_from_query_no_spaces(self):
         the_dark_knight = Movie.create_movie_from_query('TheDarkKnight')
         self.assertEqual(the_dark_knight, Movie("The Dark Knight", 2008))
+    
+    def test_create_movie_from_query_dots_and_hyphens(self):
+        LOTR_2 = Movie.create_movie_from_query('lord.of.rings-two.towers')
+        self.assertEqual(LOTR_2, 
+                    Movie("The Lord of the Rings: The Two Towers", 2002))
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
