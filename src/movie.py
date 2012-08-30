@@ -1,12 +1,12 @@
 import imdb
 
 class Movie(object):
-    def __init__(self, name, year):
-        self.name = name
+    def __init__(self, title, year):
+        self.title = title
         self.year = year
     
     def __str__(self):
-        return '%s (%s)' % (self.name, self.year)
+        return '%s (%s)' % (self.title, self.year)
     
     @staticmethod
     def create_movie_from_query(query):
