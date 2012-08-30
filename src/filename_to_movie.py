@@ -16,7 +16,6 @@ def exclude_tokens(filename, tokens_to_exclude):
     filename_after_exclustion = filename
     for t in tokens_to_exclude:
         filename_after_exclustion = filename_after_exclustion.replace(t, ' ')
-    #return ' '.join(filename_after_exclustion.split())
     return filename_after_exclustion.lstrip().rstrip()
 
 def split(filename): 
