@@ -20,9 +20,10 @@ class TestImdbQuery(unittest.TestCase):
         self.assertEqual(query, 'Inception (2010) DVDRip x264 dxva TiMPE')
         
     def test_create_query_from_filename(self):
-        filename = ImdbQuery('Inception.DVDRiP.XviD-ARROW')
-        query = ImdbQuery.create_query_from_filename(filename)
-        self.assertEqual(query, 'inception')
+        from imdbquery_test_data import expected_query
+        for filename in expected_query.keys():
+            query = ImdbQuery.create_query_from_filename(filename)
+            self.assertEqual(query, expected_query[filename])
 
 if __name__ == "__main__":
     unittest.main()
