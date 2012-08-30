@@ -15,13 +15,13 @@ def create_imdb_query_from_filename(filename):
 def exclude_tokens(filename, tokens_to_exclude):
     filename_after_exclustion = filename
     for t in tokens_to_exclude:
-        filename_after_exclustion = filename_after_exclustion.replace(t, '')
-    return ' '.join(filename_after_exclustion.split())
-    return filename_after_exclustion
+        filename_after_exclustion = filename_after_exclustion.replace(t, ' ')
+    #return ' '.join(filename_after_exclustion.split())
+    return filename_after_exclustion.lstrip().rstrip()
 
 def split(filename): 
     splitted_filename = ''
     words = re.compile(r'[^a-z0-9]+').split(filename)
     for w in words:
-        splitted_filename += w
+        splitted_filename += ' ' + w
     return splitted_filename
