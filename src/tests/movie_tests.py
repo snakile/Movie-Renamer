@@ -27,6 +27,10 @@ class Test(unittest.TestCase):
         self.assertEqual(the_matrix.title, "The Matrix")
         self.assertEqual(the_matrix.year, 1999)
 
+    def test_create_movie_from_query_no_spaces(self):
+        the_dark_knight = Movie.create_movie_from_query('TheDarkKnight')
+        self.assertEqual(the_dark_knight.title, "The Dark Knight")
+        self.assertEqual(the_dark_knight.year, 2008)
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
