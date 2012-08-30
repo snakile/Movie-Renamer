@@ -12,5 +12,5 @@ class Movie(object):
     def create_movie_from_query(query):
         db = imdb.IMDb()
         movie_obj = db.search_movie(query, results=1)[0]
-        created_movie = Movie(name=movie_obj['title'], year=movie_obj['year'])
+        created_movie = Movie(title=movie_obj['title'], year=movie_obj['year'])
         return created_movie
