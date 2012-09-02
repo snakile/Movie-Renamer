@@ -1,8 +1,7 @@
 import unittest
-
+from movie_renamer import rename
 
 class Test(unittest.TestCase):
-
 
     def test_rename(self):
         old_filename = 'Inception.DVDRiP.XviD-ARROW.avi'
