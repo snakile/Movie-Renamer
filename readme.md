@@ -38,3 +38,8 @@ def test_rename(self):
     for old_filename, new_filename in filenames.items():
         self.assertEqual(rename(old_filename), new_filename)
 ```
+
+Requirements
+------------
+ - Python 2.7
+ - IMDbPY
