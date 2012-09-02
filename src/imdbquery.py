@@ -21,10 +21,7 @@ class ImdbQuery(str):
     
     def remove_non_alaphnumeric_chars(self):
         terms = re.compile(r'[^a-zA-Z0-9]+').split(self)
-        r = ''
-        for t in terms:  
-            if t != '': r += ' ' + t
-        return ImdbQuery(r).lstrip()
+        return ImdbQuery(' '.join(terms)).lstrip().rstrip()
     
     def add_parentheses_around_years(self):
         regex = re.compile(r'(19|20)\d{2}')
