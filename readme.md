@@ -33,6 +33,18 @@ Examples
 9: 'The Avengers (2012).avi'
 >>> rename('Pulp.Fiction.1994.720p.BluRay.x264-SiNNERS.mkv')
 10: 'Pulp Fiction (1994).mkv'
+>>> rename('aladdin disney')
+11: 'Aladdin (1994)'
+>>> rename('green mile')
+12: 'The Green Mile (1999)'
+>>> rename('theDarkKnightRises')
+13: 'The Dark Knight Rises (2012)'
+>>> rename('matrix 2')
+14: 'The Matrix Reloaded (2003)'
+>>> rename('no.country.for.old.man')
+15: 'No Country for Old Men (2007).man'
+>>> rename('The Big Lebowski [Eng][XviD][1998].avi')
+16: 'The Big Lebowski (1998).avi'
 ```
 
 More examples can be found in the tests.
