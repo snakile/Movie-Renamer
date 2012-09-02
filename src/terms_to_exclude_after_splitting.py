@@ -23,7 +23,9 @@ rips = (
         'dvdr9',
         'telesync',
         'telecine',
-        'reencoded'
+        'dvdivx'
+        'reencoded',
+        'lchd'
         )
 
 numbers = ('x264',

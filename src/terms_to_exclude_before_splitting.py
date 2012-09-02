@@ -35,6 +35,7 @@ famous_uploaders = ('LEGi0N',
                     'ZMG',
                     'D-Z0N3',
                     'Hive-CM8',
+                    'SCHIZO',
                     'NPW',
                     'Feel-Free',
                     'SHiRK',
@@ -52,7 +53,8 @@ famous_uploaders = ('LEGi0N',
                     'Vrxuniique',
                     'EuReKA',
                     'aXXo',
-                    'DiCE'
+                    'DiCE',
+                    'ESiR'
                     )
 
 terms = long_terms + short_terms + famous_uploaders
