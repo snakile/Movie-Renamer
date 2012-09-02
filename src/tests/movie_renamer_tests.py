@@ -1,12 +1,12 @@
 import unittest
 from movie_renamer import rename
+from movie_renamer_test_data import filenames
 
 class Test(unittest.TestCase):
 
     def test_rename(self):
-        old_filename = 'Inception.DVDRiP.XviD-ARROW.avi'
-        new_filename = 'Inception (2010).avi'
-        self.assertEqual(rename(old_filename), new_filename)
+        for old_filename, new_filename in filenames.items():
+            self.assertEqual(rename(old_filename), new_filename)
 
 
 if __name__ == "__main__":
