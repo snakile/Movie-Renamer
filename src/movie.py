@@ -13,7 +13,7 @@ class Movie(object):
         return other.title == self.title and other.year == self.year
     
     @staticmethod
-    def create_movie_from_query(query):
+    def create_movie_from_imdb_query(query):
         db = imdb.IMDb()
         movie_obj = db.search_movie(query, results=1)[0]
         created_movie = Movie(title=movie_obj['title'], year=movie_obj['year'])
