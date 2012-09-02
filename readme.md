@@ -1,7 +1,9 @@
 Movie Renamer
 =============
 The application is currently incomplete:
- - There's no GUI and no way to install the app (besides cloning the repository).
+ - There's no GUI.
+ 
+ - There's no way to install the app (besides cloning the repository).
 
  - The renamer doesn't work on a significant portion of possible movie file names.
  
