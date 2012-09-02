@@ -41,8 +41,8 @@ Examples
 13: 'The Dark Knight Rises (2012)'
 >>> rename('matrix 2')
 14: 'The Matrix Reloaded (2003)'
->>> rename('no.country.for.old.man')
-15: 'No Country for Old Men (2007).man'
+>>> rename('no.country.for.old.man.mp4')
+15: 'No Country for Old Men (2007).mp4'
 >>> rename('The Big Lebowski [Eng][XviD][1998].avi')
 16: 'The Big Lebowski (1998).avi'
 ```
